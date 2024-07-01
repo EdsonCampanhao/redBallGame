@@ -191,7 +191,7 @@ function loop() {
 
     }
 }
-setTimeout(()=>{loop()},5000)
+setTimeout(()=>{loop()},10000)
 
 
 
