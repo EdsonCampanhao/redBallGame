@@ -73,7 +73,7 @@ const renderFloor = {
     h: 300
 }
 const floor = new Image()
-floor.src = "../img/scenery.jpg"
+floor.src = "./img/scenery.jpg"
 const floorPosition = {
     x: 0,
     y: 819,
@@ -96,11 +96,6 @@ const floorPosition = {
             this.vel = 300
         }
     },
-}
-const rock = new Image();
-rock.src = "../img/rock.png";
-rock.onload = () => {
-    context.drawImage(rock, 20, 100, 140, 140, 900, 120, 50, 50)
 }
 class rockPosition {
     constructor() {
