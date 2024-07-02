@@ -17,7 +17,7 @@ function gravity(obj) {
         }
     }
 }
-const hurtSound = new Audio('/sounds/hit.wav');
+const hurtSound = new Audio('../sounds/hit.wav');
 function jump(obj) {
     if (obj.jumping == true) {
 
@@ -30,7 +30,7 @@ function jump(obj) {
     }
 }
 const bolaImage = new Image()
-bolaImage.src = '/img/sprite-ball (1).png'
+bolaImage.src = '../img/sprite-ball (1).png'
 const bolaPosition = {
     kLeft: false,
     kRight: false,
@@ -73,7 +73,7 @@ const renderFloor = {
     h: 300
 }
 const floor = new Image()
-floor.src = "/img/scenery.jpg"
+floor.src = "../img/scenery.jpg"
 const floorPosition = {
     x: 0,
     y: 819,
@@ -98,7 +98,7 @@ const floorPosition = {
     },
 }
 const rock = new Image();
-rock.src = "/img/rock.png";
+rock.src = "../img/rock.png";
 
 class rockPosition {
     constructor() {
@@ -181,7 +181,7 @@ function loop() {
         // pedregulho.move();
         // pedregulho.kill();
         if (isFarAway) {
-            if (Math.round(Math.random() * 10) > 9) {
+            if (Math.round(Math.random() * 100) > 99) {
                 geraPedras(isFarAway)
             }
         }
@@ -189,7 +189,5 @@ function loop() {
 
     }
 }
-setTimeout(()=>{loop()},2000)
-
-
+loop()
 
